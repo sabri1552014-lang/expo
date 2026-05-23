@@ -30,7 +30,7 @@ describe('managed project test', () => {
     await fs.rm(projectRoot, { force: true, recursive: true });
 
     // Pin the SDK version to prevent the latest version breaking snapshots
-    await spawnAsync('bunx', ['create-expo-app', '-t', 'blank@sdk-49', projectName], {
+    await spawnAsync('bunx', ['create-expo-app', '-t', 'blank@sdk-56', projectName], {
       stdio: 'inherit',
       cwd: tmpDir,
       env: {
@@ -224,7 +224,7 @@ describe(`getHashSourcesAsync - managed project`, () => {
     await fs.rm(projectRoot, { force: true, recursive: true });
 
     // Pin the SDK version to prevent the latest version breaking snapshots
-    await spawnAsync('bunx', ['create-expo-app', '-t', 'blank@sdk-49', projectName], {
+    await spawnAsync('bunx', ['create-expo-app', '-t', 'blank@sdk-56', projectName], {
       stdio: 'inherit',
       cwd: tmpDir,
       env: {

@@ -21,7 +21,7 @@ describe('updates managed support', () => {
   beforeAll(async () => {
     await fs.rm(projectRoot, { force: true, recursive: true });
     // Pin the SDK version to prevent the latest version breaking snapshots
-    await spawnAsync('bunx', ['create-expo-app', '-t', 'blank@sdk-51', projectName], {
+    await spawnAsync('bunx', ['create-expo-app', '-t', 'blank@sdk-56', projectName], {
       stdio: 'inherit',
       cwd: tmpDir,
       env: {
