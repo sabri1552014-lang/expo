@@ -8,6 +8,8 @@
 
 ### 🐛 Bug fixes
 
+- Fixed unstable fingerprint from `expo-modules-jsi`. ([#46187](https://github.com/expo/expo/pull/46187) by [@kudo](https://github.com/kudo))
+
 ### 💡 Others
 
 ## 0.19.1 — 2026-05-21
